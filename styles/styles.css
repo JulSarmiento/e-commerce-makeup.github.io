@@ -7,15 +7,23 @@
 }
 
 /* Header */
-.header h1 {
-    color: rgb(0, 0, 0);
-    display: inline-block;
-    font-size: 50px;
-    text-align: center;
-    font-style: italic;
-    background-color: rgba(179, 135, 143, 0.685);
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(230, 169, 180, 0.685);
     border-radius: 1em;
     padding: 40px;
+}
+
+.title {
+    font-size: 70px;
+    font-style: italic;
+    color: rgb(87, 84, 78);
+}
+
+.logo {
+    height: 200px;
 }
 
 /* Main body */

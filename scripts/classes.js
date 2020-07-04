@@ -1,5 +1,6 @@
 
 class Product {
+    // En esta clase se crea el objeto producto con el que se trabajara en el e-commerce. 
     constructor(id, name, value, picture='assets/images/image.png') {
         this.id = id;
         this.name = name;
@@ -59,7 +60,7 @@ class Cart {
     }
 
     static _print() {
-
+        // Eta función crea la lista de productos agregados al carrito.
         let html = '';
         for(let i = 0; i < Cart._cart.length; i++) {
             const product = Cart._cart[i];

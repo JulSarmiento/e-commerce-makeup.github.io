@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/style-payment.css">
+        <script src="scripts/classes.js" async></script>
+        
+        <script src="scripts/cart.js" async></script>
+
+        <script src="scripts/main.js" async></script>
+        <title>Mazu the fancy | Payment </title>
+    </head>
+    <body class="wrapper">
+
+        <header class="header">
+            <h1 class="title">Mazu, the fancy</h1>
+            <img src="assets/images/logo_Mesa de trabajo 1.png" alt="Imagen que representa el logo de la empresa." class="logo">
+        </header>
+
+        <main class="grid config">
+
+            <section class="products">
+                <h2 class="subtitle">¡Déjanos tus datos!</h2>
+
+                <section class="products-element products-grid" > 
+
+                    <form action="" id="personal-info" class="form">
+
+                        <h3>Datos personales</h3>
+
+                        <div class="flex input">
+                            <label for="name"> Nombre </label>
+                            <input type="text" id="name" required>
+                        </div>
+
+                        <div class="flex input">
+                            <label for="lastname"> Apellido</label>
+                            <input type="text" id="lastname" required>
+                        </div>
+
+                        <div class="flex input">
+                            <label for="email"> Correo electrónico</label>
+                            <input type="email" id="email" required>
+                        </div>
+
+                        <div class="flex input">
+                            <label for="document"> Tipo de cédula: </label>
+                            <select name="document" id="document">
+                                <option value=""></option>
+                                <option value="C.C">Cédula</option>
+                                <option value="T.I">Tarjeta de Identidad</option>
+                                <option value="Pasaporte">Pasaporte</option>
+                                <option value="extranjero"> Cédula de extranjería</option>
+                            </select>
+                        </div>
+
+                        <div class="flex input">
+                            <label for="phone"> Télefono </label>
+                            <input type="number" id="phone" >
+                        </div>
+
+                        <div class="flex input">
+                            <label for="direction"> Dirección:  </label>
+                            <input type="text" id="direction" required>
+                        </div>
+
+                        <button type="submit" id="form-acept">Aceptar</button>
+
+                    </form>
+
+                </section>
+
+            </section>
+
+            <aside class="cart">
+                <h2 class="subtitle">Envio</h2>
+                <aside class="cart-element">
+
+                    <form action="">
+                        <p>Deseas: </p>
+                        <div>
+                            <label for="pickup">Recoger</label>
+                            <input type="radio" id="pickup" name="recoger" value="recoger">
+                        </div>
+                        <div>
+                            <label for="sent">Enviar</label>
+                            <input type="radio" id="sent" name="envio" value="enviar">
+                        </div>
+
+                        <button>Aceptar</button>
+
+                    </form>
+
+                    <p>Total: $<span class="final-total"></span></p>
+                </aside>
+
+                <button class="pay">Pagar carrito</button>
+
+            </aside>
+
+        </main>
+        
+    </body>
+</html>
