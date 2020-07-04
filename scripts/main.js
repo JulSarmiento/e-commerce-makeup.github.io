@@ -19,6 +19,7 @@ window.addEventListener('load', function() {
     Cart.init();
 
     products = [
+        // array de productos 
         new Product(0, 'Labial mate rojo', 25000),
         new Product(1, 'Base luminosa beige', 50000),
         new Product(2, 'Pestañina cafe aprueba de agua', 25000),

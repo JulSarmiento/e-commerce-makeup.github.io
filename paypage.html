@@ -28,26 +28,26 @@
 
                     <form action="" id="personal-info" class="form">
 
-                        <h3>Datos personales</h3>
+                        <h3 class="subtitle" >Datos personales</h3>
 
-                        <div class="flex input">
+                        <div class="flex ">
                             <label for="name"> Nombre </label>
-                            <input type="text" id="name" required>
+                            <input type="text" id="name" placeholder="Pepito Mario" class="input"  required>
                         </div>
 
-                        <div class="flex input">
+                        <div class="flex ">
                             <label for="lastname"> Apellido</label>
-                            <input type="text" id="lastname" required>
+                            <input type="text" id="lastname" placeholder="Perez Martinez" class="input"  required>
                         </div>
 
-                        <div class="flex input">
+                        <div class="flex ">
                             <label for="email"> Correo electrónico</label>
-                            <input type="email" id="email" required>
+                            <input type="email" id="email" placeholder="PepitoPerez@hotmail.com" class="input"  required>
                         </div>
 
-                        <div class="flex input">
+                        <div class="flex ">
                             <label for="document"> Tipo de cédula: </label>
-                            <select name="document" id="document">
+                            <select name="document" id="document" class="input" >
                                 <option value=""></option>
                                 <option value="C.C">Cédula</option>
                                 <option value="T.I">Tarjeta de Identidad</option>
@@ -56,14 +56,19 @@
                             </select>
                         </div>
 
-                        <div class="flex input">
-                            <label for="phone"> Télefono </label>
-                            <input type="number" id="phone" >
+                        <div class="flex ">
+                            <label for="document-number"> Número de documento</label>
+                            <input type="number" id="document-number" class="input"  minlength="9" maxlength="10" placeholder="1234567891" required>
                         </div>
 
-                        <div class="flex input">
+                        <div class="flex ">
+                            <label for="phone"> Télefono </label>
+                            <input type="number" id="phone" minlength="7" class="input" placeholder="3502020200" >
+                        </div>
+
+                        <div class="flex ">
                             <label for="direction"> Dirección:  </label>
-                            <input type="text" id="direction" required>
+                            <input type="text" id="direction" placeholder="carrera 34 #45" class="input" required>
                         </div>
 
                         <button type="submit" id="form-acept">Aceptar</button>
