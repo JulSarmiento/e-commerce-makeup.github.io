@@ -1,0 +1,123 @@
+/*Background*/
+
+.wrapper {
+    margin: 1% 1%;
+    padding: 1%;
+    background-color: #efefef;
+}
+
+/* Header */
+.header h1 {
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-size: 50px;
+    text-align: center;
+    font-style: italic;
+    background-color: rgba(179, 135, 143, 0.685);
+    border-radius: 1em;
+    padding: 40px;
+}
+
+/* Main body */
+
+.grid {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-gap: 2%;
+}
+
+.config {
+    background-color: rgba(192, 255, 226, 0.753);
+    border-radius: 2em;
+    padding: 1em;
+}
+
+/* Products*/
+
+.products-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: 1px solid rgba(255, 0, 0, 0.685);
+    border-radius: 1em;
+}
+
+/* Products title*/
+
+.subtitle {
+    text-align: center;
+    font-style: oblique;
+    color: rgb(141, 124, 28);
+    font-size: 40px;
+
+}
+
+/* Product Card*/
+
+.card {
+    background-color: rgba(255, 192, 203, 0.719);
+    border-radius: 2em;
+    margin: 5%;
+    padding: 2% 1%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}   
+
+.card img {
+    height: auto;
+    width: 200px;
+    border-radius: 1em;
+}
+
+.card h2 {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(141, 124, 28);
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.card p {
+    font-size: 30px;
+    margin: 10px;
+    font-style: italic;
+}
+
+.card button {
+    padding: 3%;
+    font-size: 18px;
+    border: none;
+    background-color:rgb(141, 124, 28);
+    border-radius: 1em;
+    color: #ffffff;
+}
+
+/* Shopping Cart */
+
+.cart-element {
+    border: 1px solid red;
+    border-radius: 1em;
+    max-width: 23em;
+}
+
+#cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+}
+
+.list {
+    background-color: pink;
+    border-radius: 10px;
+    padding: 15px;
+    color: rgb(83, 76, 33);
+    font-size: 20px;
+    margin-top: 10px;
+    width: 200px;
+    text-align: center;
+}

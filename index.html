@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/styles.css">
+        <title>Mazu the fancy </title>
+
+        <script src="scripts/classes.js" async></script>
+        <script src="scripts/storage.js" async></script>
+
+        <script src="scripts/checkout.js" async></script>
+        <script src="scripts/cart.js" async></script>
+
+        <script src="scripts/main.js" async></script>
+
+    </head>
+    <body class="wrapper">
+
+        <header class="header">
+            <h1 class="title">Mazu, the fancy</h1>
+        </header>
+
+        <main class="grid config">
+
+            <section class="products">
+                <h2 class="subtitle">¡Productos!</h2>
+                <section id="products" class="products-element products-grid" > </section>
+            </section>
+
+            <aside class="cart">
+                <h2 class="subtitle">Carrito</h2>
+                <aside class="cart-element">
+                    <ul id="cart">
+
+                    </ul>
+
+                    <p>Total: $<span class="total"></span></p>
+                </aside>
+                <button class="cart-pay">Pagar carrito</button>
+                <button class="cart-clear">Vaciar Carrito</button>
+
+            </aside>
+
+        </main>
+        
+
+    </body>
+</html>
