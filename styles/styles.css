@@ -22,6 +22,10 @@
     color: rgb(87, 84, 78);
 }
 
+.title a {
+    text-decoration: none;
+}
+
 .logo {
     height: 200px;
 }
