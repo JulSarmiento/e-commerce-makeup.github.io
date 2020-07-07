@@ -35,11 +35,10 @@
 
 /* Main body */
 
-/*.grid {
+.grid {
     display: grid;
-    grid-template-columns: 70% 30%;
-    grid-gap: 2%;
-}*/
+    grid-template-columns: 100%;
+}
 
 .config {
 
@@ -149,7 +148,54 @@
 @media screen and (min-width: 768px ) {
 
     .title {
-        font-size: 50px;
+        font-size: 70px;
+    }
+
+    .subtitle {
+        font-size: 40px;
+    }
+
+
+    .grid {
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+
+    .card h2 {
+        font-size: 25px;
+    }
+    
+    .card p {
+        font-size: 23px;
+    }
+    
+    .card button {
+        font-size: 23px;
+    }
+
+    .products-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .products-grid {
+        display: grid;
+        grid-template-columns: 33.39% 33.39% 33.39% ;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+
+    .title {
+        font-size: 80px;
+    }
+
+    .logo {
+        height: 200px;
     }
 
     .card h2 {
@@ -162,12 +208,10 @@
     
     .card button {
         font-size: 20px;
-
     }
 
     .products-grid {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 25% 25% 25% 25% ;
     }
-
 }
