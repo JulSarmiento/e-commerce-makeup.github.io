@@ -49,12 +49,10 @@
 
 /* Products*/
 
-/*.products-grid {
+.products-grid {
     display: grid;
-    grid-template-columns: 50% 50%;
-    border: 1px solid rgba(255, 0, 0, 0.685);
-    border-radius: 1em;
-}*/
+    grid-template-columns: 100%;
+}
 
 /* Products title*/
 
@@ -91,22 +89,32 @@
     text-align: center;
     font-style: italic;
     margin-bottom: 0;
+    color: #182242;
 }
 
 .card p {
     font-size: 18px;
     margin: 10px;
     font-style: italic;
+    color: #182242;
 }
 
 .card button {
     padding: 3%;
     font-size: 14px;
     border: none;
-
+    color: #182242;
     border-radius: 1em;
-
 }
+
+.card button:hover {
+    background-color: #f8D3D3;
+}
+
+.card button:active {
+    background-color: #f8D3D3;
+}
+
 
 /* Shopping Cart */
 
@@ -142,6 +150,24 @@
 
     .title {
         font-size: 50px;
-    
     }
+
+    .card h2 {
+        font-size: 20px;
+    }
+    
+    .card p {
+        font-size: 23px;
+    }
+    
+    .card button {
+        font-size: 20px;
+
+    }
+
+    .products-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
 }
