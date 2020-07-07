@@ -1,72 +1,73 @@
 /*Background*/
 
 .wrapper {
-    margin: 1% 1%;
-    padding: 1%;
-    background-color: #efefef;
+    margin: 0;
+    padding: 0;
+    background-color: #f3eee5;
+
 }
 
 /* Header */
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-color: rgba(230, 169, 180, 0.685);
-    border-radius: 1em;
-    padding: 40px;
+    background-color: #f8D3D3;
+    padding-left: 10px;
 }
 
 .title {
-    font-size: 70px;
-    font-style: italic;
-    color: rgb(87, 84, 78);
+    font-size: 30px;
+    color: #d979af;
+    font-family: 'Euphoria Script', cursive;
+    letter-spacing: 2px;
+
 }
 
 .title a {
     text-decoration: none;
+    color: #d979af;
 }
 
 .logo {
-    height: 200px;
+    height: 80px;
 }
 
 /* Main body */
 
-.grid {
+/*.grid {
     display: grid;
     grid-template-columns: 70% 30%;
     grid-gap: 2%;
-}
+}*/
 
 .config {
-    background-color: rgba(192, 255, 226, 0.753);
+
     border-radius: 2em;
     padding: 1em;
 }
 
 /* Products*/
 
-.products-grid {
+/*.products-grid {
     display: grid;
     grid-template-columns: 50% 50%;
     border: 1px solid rgba(255, 0, 0, 0.685);
     border-radius: 1em;
-}
+}*/
 
 /* Products title*/
 
 .subtitle {
     text-align: center;
-    font-style: oblique;
-    color: rgb(141, 124, 28);
-    font-size: 40px;
-
+    font-style: italic;
+    font-family: 'Darker Grotesque', sans-serif;
+    color: #182242;
 }
 
 /* Product Card*/
 
 .card {
-    background-color: rgba(255, 192, 203, 0.719);
     border-radius: 2em;
     margin: 5%;
     padding: 2% 1%; 
@@ -75,6 +76,8 @@
     justify-content: center;
     align-items: center;
     width: auto;
+    background-color: #ffffff;
+    box-shadow: 8px 7px 28px 3px rgba(24,34,66,0.35);
 }   
 
 .card img {
@@ -84,32 +87,31 @@
 }
 
 .card h2 {
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
-    color: rgb(141, 124, 28);
     font-style: italic;
     margin-bottom: 0;
 }
 
 .card p {
-    font-size: 30px;
+    font-size: 18px;
     margin: 10px;
     font-style: italic;
 }
 
 .card button {
     padding: 3%;
-    font-size: 18px;
+    font-size: 14px;
     border: none;
-    background-color:rgb(141, 124, 28);
+
     border-radius: 1em;
-    color: #ffffff;
+
 }
 
 /* Shopping Cart */
 
 .cart-element {
-    border: 1px solid red;
+
     border-radius: 1em;
     max-width: 23em;
 }
@@ -124,12 +126,22 @@
 }
 
 .list {
-    background-color: pink;
+
     border-radius: 10px;
     padding: 15px;
-    color: rgb(83, 76, 33);
+
     font-size: 20px;
     margin-top: 10px;
     width: 200px;
     text-align: center;
+}
+
+/*Media Queries */
+
+@media screen and (min-width: 768px ) {
+
+    .title {
+        font-size: 50px;
+    
+    }
 }
