@@ -16,3 +16,52 @@ input, label, select {
     justify-content: space-between;
 }
 
+#personal-info{
+    font-family: 'Darker Grotesque', sans-serif;
+    color: #182242;
+    font-size: 1.2em;
+}
+
+#form-acept, .cart-element button , .pay {
+    margin: 3% auto;
+    padding: 2%;
+    font-size: 14px;
+    border: none;
+    color: #182242;
+    border-radius: 1em;
+    background-color: #efefef;
+    box-shadow: 8px 7px 28px 3px rgba(24,34,66,0.35);
+}
+#form-acept:hover, .cart-element button, .pay{
+    background-color: #f8D3D3;
+}
+
+#form-acept:active,.cart-element button, .pay {
+    background-color: #efefef;
+}
+
+@media screen and (min-width: 768px){
+    .products-grid{
+        grid-template-columns: 100%;
+    }
+    #personal-info{
+        margin: 0 10% 0 0;
+        background-color: #f8D3D3;
+        box-shadow: 8px 7px 28px 3px rgba(24,34,66,0.35);
+    }
+    .cart {
+        border-radius: 1em;
+        padding: 1em;
+        background-color: #f8D3D3;
+        box-shadow: 8px 7px 28px 3px rgba(24,34,66,0.35);
+    }
+    .cart .cart-element{
+        font-family: 'Darker Grotesque', sans-serif;
+        color: #182242;
+        font-size: 1.2em;
+    }
+
+} 
+
+
+
