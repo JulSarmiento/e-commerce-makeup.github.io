@@ -8,6 +8,11 @@ window.addEventListener('load', () => {
     form.addEventListener('submit', evt => {
         evt.preventDefault();
 
-        
     });
 });
+
+function handlePay() {
+    let nameValue = document.getElementById('name').value;
+
+    alert(`¡${nameValue}, muchas gracias por su compra! Nos pondremos en contacto con usted en breves momentos.`)
+}

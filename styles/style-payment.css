@@ -1,19 +1,24 @@
 .form {
     background-color: pink;
     border-radius: 1em;
-    padding: 1% 2%;
-
+    padding: 10px 10px 20px 10px;
 }
 
 input, label, select {
     display: inline-block;
     flex-grow: 1;
     margin-top: 10px;
+    border: none;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 100%;
 }
 
 .flex {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 #payment-form{
@@ -22,7 +27,28 @@ input, label, select {
     font-size: 1.2em;
 }
 
-#form-acept, .cart-element button , .pay {
+.cart-element-two {
+    max-width: 23em;
+    border-radius: 10px;
+    margin: 5%;
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    background-color: #ffffff;
+    box-shadow: 8px 7px 28px 3px rgba(24,34,66,0.35);
+}
+
+.text {
+    font-size: 20px;
+    margin: 10px;
+    font-family: 'Darker Grotesque', sans-serif;
+    color: #182242;
+}
+
+#form-acept, .cart-element-two button , .pay {
     margin: 3% auto;
     padding: 2%;
     font-size: 14px;
@@ -32,15 +58,20 @@ input, label, select {
     background-color: #efefef;
     box-shadow: 8px 7px 28px 3px rgba(24,34,66,0.35);
 }
-#form-acept:hover, .cart-element button, .pay{
+#form-acept:hover, .cart-element-two button, .pay{
+    background-color: #efefef;
+    padding: 5px;
+}
+
+#form-acept:active,.cart-element-two button, .pay {
     background-color: #f8D3D3;
 }
 
-#form-acept:active,.cart-element button, .pay {
-    background-color: #efefef;
-}
-
 @media screen and (min-width: 768px){
+    main{
+        margin: 5% 2%;
+    }
+    
     .products-grid{
         grid-template-columns: 100%;
     }
@@ -62,6 +93,11 @@ input, label, select {
     }
 
 } 
+
+@media screen and (min-width: 1440px) {
+
+
+}
 
 
 
