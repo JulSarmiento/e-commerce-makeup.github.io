@@ -64,7 +64,8 @@ class Cart {
         let html = '';
         for(let i = 0; i < Cart._cart.length; i++) {
             const product = Cart._cart[i];
-            html += `<li class="list">${product.name}</li>`; 
+            html += `<li class="list">${product.name}</li>
+                    <p>$${product.value} <i class="fas fa-minus-circle" class="remove-icon" id="remove-icon"></i></p>`; 
         }
     
         Cart.element.innerHTML = html;
