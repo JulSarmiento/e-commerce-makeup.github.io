@@ -1,12 +1,16 @@
 
 class Product {
     // En esta clase se crea el objeto producto con el que se trabajara en el e-commerce. 
-    constructor(id, name, value, picture='assets/images/image.png') {
+    constructor(id, name, value, picture ='assets/images/image.png') {
         this.id = id;
         this.name = name;
         this.value = value;
         this.picture = picture;
     };
+
+    static formatPrice(price) {
+        return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD'}).format(price);
+    }
 };
 
 class Cart {
@@ -25,6 +29,8 @@ class Cart {
         Cart._cart = JSON.parse(localStorage.getItem(Cart.KEY) || '[]');
 
         Cart.element = document.getElementById('cart');
+
+        Cart.total = document.querySelector('.total');
 
         Cart._print();
 
@@ -62,17 +68,26 @@ class Cart {
     static _print() {
         // Eta función crea la lista de productos agregados al carrito.
         let html = '';
+        let totalPrice = 0;
+
         for(let i = 0; i < Cart._cart.length; i++) {
             const product = Cart._cart[i];
+            totalPrice += product.value;
+
             html += `<li class="list">${product.name}</li>
-                    <p>$${product.value}</p>
+                    <p>$${Product.formatPrice(product.value)}</p>
                     <button class="remove-icon" data-position="${i}"><i class="fas fa-minus-circle" id="remove-icon"></i></button>`; 
         }
     
         Cart.element.innerHTML = html;
 
+        Cart.total.innerHTML = Product.formatPrice(totalPrice);
+
+
         document.querySelectorAll('.remove-icon').forEach(Cart._setRemoveCartListener);
+        
     }
+
 
     static _setRemoveCartListener(button) {
         button.addEventListener('click', function(){
@@ -86,10 +101,5 @@ class Cart {
         })
     }
 
-    static totalPrice() {
-        let price;
-        let totalPrice;
-
-    }
 
 }

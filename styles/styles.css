@@ -105,6 +105,7 @@
     border: none;
     color: #182242;
     border-radius: 1em;
+    outline: 0;
 }
 
 .card button:hover {
@@ -169,6 +170,7 @@
     color: #182242;
     border: none;
     border-radius: 1em;
+    outline: 0;
 }
 
 .cart-btn:hover {
@@ -176,7 +178,7 @@
 }
 
 .cart-pay {
-    outline: none;
+    outline: 0;
 }
 
 /*Media Queries */

@@ -49,8 +49,8 @@ window.addEventListener('load', function() {
 
         html += `<div class="card">
                     <img src="${product.picture}" alt="${product.name}">
-                    <h2>  ${product.name} </h2>
-                    <p> $ ${product.value}</p>
+                    <h2>${product.name}</h2>
+                    <p>${Product.formatPrice(product.value)}</p>
                     <button class="button cart-add" data-product="${product.id}">Añadir al carrito</button>
                 </div>`; 
 
