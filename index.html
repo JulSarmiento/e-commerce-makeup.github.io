@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&family=Euphoria+Script&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/styles.css">
 
@@ -30,7 +31,13 @@
             </section>
 
             <aside class="cart">
-                <h2 class="subtitle">Carrito</h2>
+                <h2 class="subtitle">Carrito <i class="fas fa-shopping-cart" class="icon" id="cart-icont"></i></h2>
+                <div class="btn-container">
+                    <button class="cart-btn">Filtrar por nombre</button>
+                    <button class="cart-btn">Filtrar por precio</button>
+                </div>
+
+                
                 <aside class="cart-element">
                     <ul id="cart">
 
@@ -38,8 +45,11 @@
 
                     <p>Total: $<span class="total"></span></p>
                 </aside>
-                <button class="cart-pay" onclick="location.href='paypage.html'">Pagar carrito</button>
-                <button class="cart-clear">Vaciar Carrito</button>
+                <div class="btn-container">
+                    <button class="cart-btn" onclick="location.href='paypage.html'">Págame</button>
+                    <button class="cart-btn">Vaciar Carrito</button>
+                </div>
+
 
             </aside>
 
