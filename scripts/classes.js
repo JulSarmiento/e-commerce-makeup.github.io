@@ -137,6 +137,5 @@ class Cart {
 
 class Checkout {
     static processPayment() {
-        alert('Lárgese, sapo HP');
     }
 }
