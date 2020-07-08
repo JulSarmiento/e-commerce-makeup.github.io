@@ -16,7 +16,7 @@ input, label, select {
     justify-content: space-between;
 }
 
-#personal-info{
+#payment-form{
     font-family: 'Darker Grotesque', sans-serif;
     color: #182242;
     font-size: 1.2em;
@@ -44,7 +44,7 @@ input, label, select {
     .products-grid{
         grid-template-columns: 100%;
     }
-    #personal-info{
+    #payment-form{
         margin: 0 10% 0 0;
         background-color: #f8D3D3;
         box-shadow: 8px 7px 28px 3px rgba(24,34,66,0.35);

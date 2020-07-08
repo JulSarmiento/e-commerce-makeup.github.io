@@ -8,10 +8,8 @@
         <link rel="stylesheet" href="styles/styles.css">
 
         <script src="scripts/classes.js" async></script>
-
-        <script src="scripts/cart.js" async></script>
-
         <script src="scripts/main.js" async></script>
+        
         <title>Mazu the fancy </title>
 
     </head>
@@ -33,8 +31,8 @@
             <aside class="cart">
                 <h2 class="subtitle">Carrito <i class="fas fa-shopping-cart" class="icon" id="cart-icont"></i></h2>
                 <div class="btn-container">
-                    <button class="cart-btn" onclick="handleSortByName()">Filtrar por nombre</button>
-                    <button class="cart-btn" onclick="handleSortByPrice()">Filtrar por precio</button>
+                    <button class="cart-btn" onclick="Cart.sort('name')">Ordenar por nombre</button>
+                    <button class="cart-btn" onclick="Cart.sort('value')">Ordenar por precio</button>
                 </div>
                 
                 <aside class="cart-element">
@@ -45,7 +43,7 @@
                     <p>Total: <span class="total" id="total"></span></p>
                 </aside>
                 <div class="btn-container">
-                    <button class="cart-btn cart-pay" onclick="location.href='paypage.html'">Págame</button>
+                    <button class="cart-btn cart-pay">Págame</button>
                     <button class="cart-btn cart-clear">Vaciar Carrito</button>
                 </div>
 

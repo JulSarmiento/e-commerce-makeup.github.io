@@ -6,11 +6,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@500&family=Euphoria+Script&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="stylesheet" href="styles/style-payment.css">
-        <script src="scripts/classes.js" async></script>
-        
-        <script src="scripts/cart.js" async></script>
 
-        <script src="scripts/main.js" async></script>
+        <script src="scripts/classes.js" async></script>
+        <script src="scripts/checkout.js" async></script>
+
         <title>Mazu the fancy | Payment </title>
     </head>
     <body class="wrapper">
@@ -25,7 +24,7 @@
             <section class="products">
                 <section class="products-element products-grid" > 
 
-                    <form action="" id="personal-info" class="form">
+                    <form id="payment-form" class="form">
 
                         <h3 class="subtitle" >Datos personales</h3>
 
@@ -69,9 +68,6 @@
                             <label for="direction"> Dirección:  </label>
                             <input type="text" id="direction" placeholder="carrera 34 #45" class="input" required>
                         </div>
-
-                        <button type="submit" id="form-acept">Aceptar</button>
-
                     </form>
 
                 </section>
@@ -81,26 +77,10 @@
             <aside class="cart">
                 <h2 class="subtitle">Envio</h2>
                 <aside class="cart-element">
-
-                    <form action="">
-                        <p>Deseas: </p>
-                        <div>
-                            <label for="pickup">Recoger</label>
-                            <input type="radio" id="pickup" name="recoger" value="recoger">
-                        </div>
-                        <div>
-                            <label for="sent">Enviar</label>
-                            <input type="radio" id="sent" name="envio" value="enviar">
-                        </div>
-
-                        <button>Aceptar</button>
-
-                    </form>
-
-                    <p>Total: $<span class="final-total"></span></p>
+                    <p>Total: <span class="total"></span></p>
                 </aside>
 
-                <button class="pay">Pagar carrito</button>
+                <button form="payment-form" class="pay" type="submit">Pagar carrito</button>
 
             </aside>
 
