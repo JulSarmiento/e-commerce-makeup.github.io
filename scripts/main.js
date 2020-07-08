@@ -49,7 +49,7 @@ window.addEventListener('load', function() {
 
         html += `<div class="card">
                     <img src="${product.picture}" alt="${product.name}">
-                    <h2>#${product.id} - ${product.name} </h2>
+                    <h2>  ${product.name} </h2>
                     <p> $ ${product.value}</p>
                     <button class="button cart-add" data-product="${product.id}">Añadir al carrito</button>
                 </div>`; 
@@ -60,9 +60,13 @@ window.addEventListener('load', function() {
 
     document.querySelectorAll('.cart-add').forEach(setAddCartListener);
 
+    document.querySelector('.cart-clear').addEventListener('click', Cart.clear);
+
     document.querySelector('.cart-pay').addEventListener('click', function() {
-        alert('¡Gracias por seleccionarnos!')
+        alert('¡Gracias por seleccionarnos!');
     })
 
-    document.querySelector('.cart-clear').addEventListener('click', Cart.clear);
+   
+
 })
+

@@ -38,7 +38,7 @@ class Cart {
 
     static remove(index) {
         //Elimina el elemento seleccionado del array mendiante su indice. 
-        Cart._cart.slice(index);
+        Cart._cart.splice(index, 1);
         Cart.save()
     }
 
@@ -65,10 +65,31 @@ class Cart {
         for(let i = 0; i < Cart._cart.length; i++) {
             const product = Cart._cart[i];
             html += `<li class="list">${product.name}</li>
-                    <p>$${product.value} <i class="fas fa-minus-circle" class="remove-icon" id="remove-icon"></i></p>`; 
+                    <p>$${product.value}</p>
+                    <button class="remove-icon" data-position="${i}"><i class="fas fa-minus-circle" id="remove-icon"></i></button>`; 
         }
     
         Cart.element.innerHTML = html;
+
+        document.querySelectorAll('.remove-icon').forEach(Cart._setRemoveCartListener);
+    }
+
+    static _setRemoveCartListener(button) {
+        button.addEventListener('click', function(){
+            const position = button.getAttribute('data-position');
+            const product = Cart._cart[position].name;
+    
+            Cart.remove(position);
+    
+            alert(`¡${product}, removido del carrito!`);
+            
+        })
+    }
+
+    static totalPrice() {
+        let price;
+        let totalPrice;
+
     }
 
 }

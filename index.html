@@ -33,21 +33,20 @@
             <aside class="cart">
                 <h2 class="subtitle">Carrito <i class="fas fa-shopping-cart" class="icon" id="cart-icont"></i></h2>
                 <div class="btn-container">
-                    <button class="cart-btn">Filtrar por nombre</button>
-                    <button class="cart-btn">Filtrar por precio</button>
+                    <button class="cart-btn" onclick="handleSortByName()">Filtrar por nombre</button>
+                    <button class="cart-btn" onclick="handleSortByPrice()">Filtrar por precio</button>
                 </div>
-
                 
                 <aside class="cart-element">
                     <ul id="cart">
 
                     </ul>
 
-                    <p>Total: $<span class="total"></span></p>
+                    <p>Total: $<span class="total" id="total"></span></p>
                 </aside>
                 <div class="btn-container">
-                    <button class="cart-btn" onclick="location.href='paypage.html'">Págame</button>
-                    <button class="cart-btn">Vaciar Carrito</button>
+                    <button class="cart-btn cart-pay" onclick="location.href='paypage.html'">Págame</button>
+                    <button class="cart-btn cart-clear">Vaciar Carrito</button>
                 </div>
 
             </aside>

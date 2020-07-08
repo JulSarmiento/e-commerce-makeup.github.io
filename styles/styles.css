@@ -175,6 +175,9 @@
     background-color: #efefef;
 }
 
+.cart-pay {
+    outline: none;
+}
 
 /*Media Queries */
 
