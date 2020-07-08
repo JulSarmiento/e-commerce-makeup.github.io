@@ -11,7 +11,6 @@ function functionTwo(button) {
     button.innerHTML = 'Cargando...';
 }
 
-
 //Funcion para agregar productos al carrito mediante el boton "añadir al carrito"
 function setAddCartListener(button) {
     button.addEventListener('click', function(){

@@ -61,6 +61,10 @@ class Cart {
         Cart._print();
     }
 
+    static isEmpty() {
+        return localStorage.getItem(Cart.KEY) === null;
+    }
+
     static add(product) {
         //Añade un elemento al array del carrito.
         Cart._cart.push(product);
@@ -127,15 +131,13 @@ class Cart {
 
     static sort(param) {
         Cart._cart = Cart._cart.sort(function(a, b){
-            return a[param].toString().localeCompare(b[param].toString());
+            if (isNaN(a[param])) {
+                return a[param].toString().localeCompare(b[param]);
+            }
+            return a[param] - b[param];
         });
 
         Cart._print();
     }
 
-}
-
-class Checkout {
-    static processPayment() {
-    }
 }
